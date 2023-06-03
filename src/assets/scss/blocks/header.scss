@@ -1,0 +1,93 @@
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../../images/background-header.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 70px;
+    box-sizing: border-box;
+    display: flex;
+
+    &__info {
+        align-self: flex-end;
+        width: 382px;
+        box-sizing: border-box;
+        aspect-ratio: 0.886/1;
+        background-color: rgba(7, 28, 53, 0.5);
+        backdrop-filter: blur(7.5px);
+        padding: 30px 30px 50px;
+        color:  $white;
+
+        display: grid;
+        gap: 30px;
+        grid-auto-rows: min-content;
+        grid-auto-columns: max-content;
+        grid-template-areas:
+            "logo logo logo"
+            "line line line"
+            "title title title"
+            "book years price"
+            "link link link";
+    }
+
+    &__logo {
+        grid-area: logo;
+        width: 44%;
+        aspect-ratio: 1/0.198;
+    }
+
+    &__line {
+        grid-area: line;
+        border: 0.5px solid $white;
+        width: 31%;
+    }
+
+    &__title {
+        margin: 0;
+        grid-area: title;
+        @include Alethia;
+        font-size: 30px;
+        line-height: 40px;
+        text-transform: uppercase;
+    }
+
+    &__book {
+        grid-area: book;
+    }
+
+    &__years {
+        grid-area: years;
+    }
+
+    &__price {
+        grid-area: price;
+    }
+
+    &__link {
+        grid-area: link;
+        margin-top: 20px;
+        @include Lotto-medium;
+        font-size: 16px;
+        line-height: 24px;
+        color: $white;
+        text-decoration: none;
+        margin-right: 5px;
+    }
+
+    &__number {
+        @include Alethia;
+        font-size: 20px;
+        line-height: 40px;
+        text-transform: uppercase;
+    }
+
+    &__description {
+        margin: 0;
+        @include Lotto-light;
+        width: min-content;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+
+}

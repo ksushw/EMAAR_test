@@ -1,0 +1,26 @@
+//Fonts
+
+@mixin Alethia {
+    font-family: "Alethia", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+@mixin Lotto-light {
+    font-family: "Lotto", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+}
+
+@mixin Lotto-regular {
+    font-family: "Lotto", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+@mixin Lotto-medium {
+    font-family: "Lotto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+}
+
