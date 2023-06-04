@@ -1,0 +1,20 @@
+.top-projects {
+    padding: 185px 70px 109px;
+
+    &__title {
+        @include Alethia;
+        font-size: 54px;
+        line-height: 40px;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 0;
+        margin-bottom: 52px;
+    }
+
+    &__cards {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(3, minmax(200px, 1fr));
+        height: fit-content;
+    }
+}

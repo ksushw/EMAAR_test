@@ -1,0 +1,45 @@
+.card-project {
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    padding: 15px;
+    border: 1px solid rgba(7, 28, 53, 0.1);
+    position: relative;
+
+    &__image {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    &__caption {
+        z-index: 2;
+        position: absolute;
+        bottom: 15px;
+        left: 15px;
+        background: rgba(255, 255, 255, 0.85);
+        backdrop-filter: blur(7.5px);
+        width: calc(100% - 30px);
+        padding: 22px 15px;
+        box-sizing: border-box;
+        display: grid;
+        gap: 7px;
+    }
+
+    &__title {
+        @include Alethia;
+        margin: 0;
+        text-transform: uppercase;
+        font-size: 25px;
+        line-height: 25px;
+    }
+
+    &__description {
+        @include Lotto-regular;
+        margin: 0;
+        font-size: 16px;
+        line-height: 19px;
+        text-transform: uppercase;
+    }
+
+}

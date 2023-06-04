@@ -27,16 +27,61 @@
             <p class="header__description">prices from</p>
         </div>
         <a href="#" class="header__link">See project <img src="<%=require('../src/assets/images/arrow.svg')%>" alt="arrow"></a>
-
-
-
-
     </div>
 </header>
 
 <body class="body">
-    <section class="sale"></section>
-    <section class="top-projects"></section>
+    <section class="about">
+        <div class="about__image"></div>
+        <div class="about__text">
+            <h2 class="about__title">AVAILABLE HOMES FOR&nbsp;SALE
+                BY&nbsp;EMAAR PROPERTIES</h2>
+            <p class="about__description">
+                Emaar Properties is one of the world’s most valuable and admired real estate development companies. With proven 
+                competencies in properties, shopping malls & retail and hospitality & leisure.Emaar Properties is one of the 
+                world’s most valuable and admired real estate development companies
+            </p>
+            <div class="about__market-cup">
+                <span class="about__number">$10.9 bln</span>
+                <p class="about__capture">Market cap</p>
+            </div>
+            <div class="about__revenue">
+                <span class="about__number">$7.7 bln</span>
+                <p class="about__capture">Revenue</p>
+            </div>
+            <div class="about__profit">
+                <span class="about__number">$1 bln</span>
+                <p class="about__capture">$1 bln</p>
+            </div>
+            <button class="button button_dark about__button">see more</button>
+        </div>
+    </section>
+    <section class="top-projects">
+        <h2 class="top-projects__title">top projects</h2>
+        <div class="top-projects__cards">
+            <figure class="card-project">
+                <img src="<%=require('../src/assets/images/greek-rice.jpg')%>" alt="Greak rice" class="card-project__image">
+                <figcaption class="card-project__caption">
+                    <h3 class="card-project__title">creek rise</h3>
+                    <p class="card-project__description">FROM AED 2,288,888</p>
+                </figcaption>
+            </figure>
+            <figure class="card-project">
+                <img src="<%=require('../src/assets/images/expo-gold-vilas.jpg')%>" alt="Greak rice" class="card-project__image">
+                <figcaption class="card-project__caption">
+                    <h3 class="card-project__title">EXPO GOLF VILLAS 6</h3>
+                    <p class="card-project__description">FROM AED 2,288,888</p>
+                </figcaption>
+            </figure>
+            <figure class="card-project">
+                <img src="<%=require('../src/assets/images/hills-park.jpg')%>" alt="Greak rice" class="card-project__image">
+                <figcaption class="card-project__caption">
+                    <h3 class="card-project__title">HILLS PARK</h3>
+                    <p class="card-project__description">FROM AED 2,288,888</p>
+                </figcaption>
+            </figure>
+        </div>
+    </section>
     <section class="location"></section>
     <section class="projects"></section>
     <section class="facts"></section>
