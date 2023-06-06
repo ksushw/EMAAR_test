@@ -62,28 +62,28 @@
     <section class="top-projects">
         <h2 class="top-projects__title">top projects</h2>
         <div class="top-projects__cards">
-            <a class="card-project" href="#">
+            <a class="card-project top-projects__card" href="#">
                 <img src="<%=require('../src/assets/images/greek-rice.jpg')%>" alt="Greak rice"
                     class="card-project__image">
                 <div class="card-project__caption">
                     <h3 class="card-project__title">creek rise</h3>
-                    <p class="card-project__description">FROM AED 2,288,888</p>
+                    <p class="card-project__price">FROM AED 2,288,888</p>
                 </div>
             </a>
-            <a class="card-project" href="#">
+            <a class="card-project top-projects__card" href="#">
                 <img src="<%=require('../src/assets/images/expo-gold-vilas.jpg')%>" alt="Greak rice"
                     class="card-project__image">
                 <div class="card-project__caption">
                     <h3 class="card-project__title">EXPO GOLF VILLAS 6</h3>
-                    <p class="card-project__description">FROM AED 2,288,888</p>
+                    <p class="card-project__price">FROM AED 2,288,888</p>
                 </div>
             </a>
-            <a class="card-project" href="#">
+            <a class="card-project top-projects__card" href="#">
                 <img src="<%=require('../src/assets/images/hills-park.jpg')%>" alt="Greak rice"
                     class="card-project__image">
                 <div class="card-project__caption">
                     <h3 class="card-project__title">HILLS PARK</h3>
-                    <p class="card-project__description">FROM AED 2,288,888</p>
+                    <p class="card-project__price">FROM AED 2,288,888</p>
                 </div>
             </a>
         </div>
@@ -119,7 +119,132 @@
             </figure>
         </a>
     </section>
-    <section class="projects"></section>
+    <section class="projects">
+        <nav class="projects__navigation menu">
+            <fieldset class="menu__community">
+                <legend class="menu__title">community</legend>
+
+                <input type="radio" id="harbour" name="community" value="harbour" class="menu__ratio">
+                <label for="harbour" class="menu__division">dubai creek harbour</label><br>
+            
+                <input type="radio" id="hills" name="community" value="hills" class="menu__ratio">
+                <label for="hills" class="menu__division">dubai hills estate</label><br>
+            
+                <input type="radio" id="south" name="community" value="south" class="menu__ratio">
+                <label for="south" class="menu__division">emaar south</label>
+              </fieldset>
+
+              <fieldset class="menu__projects">
+                <legend class="menu__title">Projects</legend>
+                
+                <input type="radio" id="rise" name="project" value="0" class="menu__ratio">
+                <label for="rise" class="menu__division">CREEK RISE</label><br>
+            
+                <input type="radio" id="cove" name="project" value="1" class="menu__ratio">
+                <label for="cove" class="menu__division">THE COVE</label><br>
+            
+                <input type="radio" id="gate" name="project" value="2" class="menu__ratio">
+                <label for="gate" class="menu__division">CREEK GATE</label>
+              </fieldset>
+        </nav>
+
+
+        <div class="projects__card">
+            <div class="card-project">
+                <img src="<%=require('../src/assets/images/rice.png')%>" alt="Greak rice" class="card-project__image">
+                <div class="card-project__caption">
+                    <h3 class="card-project__title">creek rise</h3>
+                    <p class="card-project__description">At Dubai Creek Harbour, you will
+                        experience more of what really matters. More laughs shared with friends. More memories made. A
+                        thriving community to live, work, play, and capture moments to behold and cherish. A home where
+                        every view is a view to live for.</p>
+                </div>
+            </div>
+            <div class="slider">
+                <h2 class="slider__title">AVAILABLE UNITS</h2>
+                <span class="slider__number">1/3</span>
+                <button class="slider__arrow slider__arrow_direction_left"></button>
+                <div class="slider__card">
+                    <img src="<%=require('../src/assets/images/greek-rice.jpg')%>" alt="" class="slider__image">
+                    <div class="slider__info">
+                        <h3 class="slider__header">creek rise</h3>
+                        <span class="slider__rooms">bedrooms 1-3</span>
+                        <p class="slider__description">Creek Rise comprises two beautifully designed residential
+                            high-rises with unparalleled views overlooking the Creek Island’s lush parkland, set in a
+                            family-oriented neighbourhood.</p>
+                        <span class="slider__price">FROM AED 2 288 888</span>
+                        <button class="slider__button button button_dark">get details</button>
+                    </div>
+                </div>
+                <button class="slider__arrow slider__arrow_direction_right"></button>
+
+            </div>
+
+        </div>
+
+        <div class="projects__card">
+            <div class="card-project">
+                <img src="<%=require('../src/assets/images/cove.png')%>" alt="Greak rice" class="card-project__image">
+                <div class="card-project__caption">
+                    <h3 class="card-project__title">the cove</h3>
+                    <p class="card-project__description">Dubai Hills Estate is located in a prestigious area, Mohammed
+                        Bin Rashid City. The community features 18-hole championship golf course, 2 mln sq. ft. shopping
+                        center with sought after stores, restaurants, cafes, Tennis Academy with 10 outdoor and 4 indoor
+                        courts and Dubai Hills Park, which is the largest residential community park in Dubai.</p>
+                </div>
+            </div>
+
+            <div class="slider">
+                <h2 class="slider__title">AVAILABLE UNITS</h2>
+                <span class="slider__number">1/3</span>
+                <button class="slider__arrow slider__arrow_direction_left"></button>
+                <div class="slider__card">
+                    <img src="<%=require('../src/assets/images/park-field.png')%>" alt="" class="slider__image">
+                    <div class="slider__info">
+                        <h3 class="slider__header">PARK FIELD</h3>
+                        <span class="slider__rooms">bedrooms 1-3</span>
+                        <p class="slider__description">Embrace an urban lifestyle immeresed in nature in the green heart
+                            of Dubai. Surrounded by a seamless blend of green open spaces, exceptional amenities,
+                            recreational facilities.</p>
+                        <span class="slider__price">FROM AED 1 247 888</span>
+                        <button class="slider__button button button_dark">get details</button>
+                    </div>
+                </div>
+                <button class="slider__arrow slider__arrow_direction_right"></button>
+            </div>
+        </div>
+
+        <div class="projects__card">
+            <div class="card-project">
+                <img src="<%=require('../src/assets/images/gate.png')%>"  alt="Greak rice" class="card-project__image">
+                <div class="card-project__caption">
+                    <h3 class="card-project__title"> creek gate</h3>
+                    <p class="card-project__description">Be part of Dubai’s future. Live in a new community that
+                        supports your visions, where you can be an innovator and achieve your ambitions. Say hello to
+                        your future at Emaar South.<br> &nbsp;
+                    </p>
+                </div>
+            </div>
+
+            <div class="slider">
+                <h2 class="slider__title">AVAILABLE UNITS</h2>
+                <span class="slider__number">1/3</span>
+                <button class="slider__arrow slider__arrow_direction_left"></button>
+                <div class="slider__card">
+                    <img src="<%=require('../src/assets/images/urbana.png')%>" src="" alt="" class="slider__image">
+                    <div class="slider__info">
+                        <h3 class="slider__header">URBANA</h3>
+                        <span class="slider__rooms">bedrooms 2-3</span>
+                        <p class="slider__description">The perfect balance of innovation and suburban charm, this
+                            delightful community is home to 2 and 3-bedroom tiered and standard townhouses.</p>
+                        <span class="slider__price">FROM AED 1 138 888</span>
+                        <button class="slider__button button button_dark">get details</button>
+                    </div>
+                </div>
+                <button class="slider__arrow slider__arrow_direction_right"></button>
+            </div>
+        </div>
+    </section>
     <section class="facts"></section>
 </body>
 

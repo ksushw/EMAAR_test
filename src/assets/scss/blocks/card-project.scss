@@ -2,13 +2,8 @@
     margin: 0;
     width: 100%;
     display: flex;
-    padding: 15px;
-    box-sizing: border-box;
-    border: 1px solid rgba(7, 28, 53, 0.1);
     position: relative;
     overflow: hidden;
-    
-    
 
     &__image {
         width: 100%;
@@ -19,11 +14,11 @@
     &__caption {
         z-index: 2;
         position: absolute;
-        bottom: 15px;
-        left: 15px;
+        bottom: 0;
+        left: 0;
         background: rgba(255, 255, 255, 0.85);
         backdrop-filter: blur(7.5px);
-        width: calc(100% - 30px);
+        width: 100%;
         padding: 22px 15px;
         box-sizing: border-box;
         display: grid;
@@ -39,7 +34,7 @@
         line-height: 25px;
     }
 
-    &__description {
+    &__price {
         @include Lotto-regular;
         margin: 0;
         font-size: 16px;
@@ -47,15 +42,12 @@
         text-transform: uppercase;
     }
 
-    &:hover {
-        cursor: pointer;
-        .card-project__image {
-            transform: scale(1.1);
-        }
+    &__description {
+        @include Lotto-light;
+        margin: 0;
+        margin-top: 15px;
+        font-size: 15.18px;
+        line-height: 23px;
 
-        .card-project__caption {
-            background: rgba(255, 255, 255, 0.5);
-        }
     }
-
 }

@@ -1,5 +1,9 @@
 .top-projects {
     padding: 185px 70px 109px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
 
     &__title {
         @include Alethia;
@@ -14,7 +18,30 @@
     &__cards {
         display: grid;
         gap: 20px;
-        grid-template-columns: repeat(3, minmax(200px, 1fr));
+        grid-template-columns: repeat(3, minmax(200px, 520px));
         height: fit-content;
+    }
+
+    &__card {
+        padding: 15px;
+        box-sizing: border-box;
+        border: 1px solid rgba(7, 28, 53, 0.1);
+
+        &:hover {
+            cursor: pointer;
+            .card-project__image {
+                transform: scale(1.1);
+            }
+    
+            .card-project__caption {
+                background: rgba(255, 255, 255, 0.5);
+            }
+        }
+
+        .card-project__caption { 
+            left: 15px;
+            bottom: 15px;
+            width: calc(100% - 30px);
+    }
     }
 }

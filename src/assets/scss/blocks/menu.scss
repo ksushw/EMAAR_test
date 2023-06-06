@@ -1,0 +1,74 @@
+.menu {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 0px 14px 3px rgba(0, 0, 0, 0.03);
+
+    &__community {
+        border: none;
+        margin: 0;
+        padding: 0;
+
+        .menu__division::before {
+            content: " ";
+            display: flex;
+            margin-right: 10px;
+            width: 12px;
+            height: 12px;
+            background-color: $white;
+            border: 1px solid $grey;
+            border-radius: 50%;
+            box-sizing: border-box;
+
+
+        }
+
+        .menu__ratio:checked+.menu__division::before {
+            padding: 2px;
+            background-color: $dark-blue;
+            background-clip: content-box;
+
+        }
+
+    }
+
+    &__projects {
+        border: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__title {
+        @include Lotto-medium;
+        font-size: 20px;
+        line-height: 24px;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+    }
+
+    &__division {
+        @include Lotto-medium;
+        font-size: 16px;
+        line-height: 19px;
+        text-transform: uppercase;
+        color: $grey;
+        display: flex;
+        align-items: center;
+    }
+
+    &__ratio {
+        display: none;
+
+        &:checked {
+            background-color: $dark-blue;
+
+            &+.menu__division {
+                color: $dark-blue;
+
+            }
+        }
+    }
+
+}
