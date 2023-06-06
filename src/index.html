@@ -26,7 +26,8 @@
             <span class="header__number">aed 2.2mln</span>
             <p class="header__description">prices from</p>
         </div>
-        <a href="#" class="header__link">See project <img src="<%=require('../src/assets/images/arrow.svg')%>" alt="arrow"></a>
+        <a href="#" class="header__link">See project <img src="<%=require('../src/assets/images/arrow.svg')%>"
+                alt="arrow"></a>
     </div>
 </header>
 
@@ -37,8 +38,10 @@
             <h2 class="about__title">AVAILABLE HOMES FOR&nbsp;SALE
                 BY&nbsp;EMAAR PROPERTIES</h2>
             <p class="about__description">
-                Emaar Properties is one of the world’s most valuable and admired real estate development companies. With proven 
-                competencies in properties, shopping malls & retail and hospitality & leisure.Emaar Properties is one of the 
+                Emaar Properties is one of the world’s most valuable and admired real estate development companies. With
+                proven
+                competencies in properties, shopping malls & retail and hospitality & leisure.Emaar Properties is one of
+                the
                 world’s most valuable and admired real estate development companies
             </p>
             <div class="about__market-cup">
@@ -59,30 +62,63 @@
     <section class="top-projects">
         <h2 class="top-projects__title">top projects</h2>
         <div class="top-projects__cards">
-            <figure class="card-project">
-                <img src="<%=require('../src/assets/images/greek-rice.jpg')%>" alt="Greak rice" class="card-project__image">
-                <figcaption class="card-project__caption">
+            <a class="card-project" href="#">
+                <img src="<%=require('../src/assets/images/greek-rice.jpg')%>" alt="Greak rice"
+                    class="card-project__image">
+                <div class="card-project__caption">
                     <h3 class="card-project__title">creek rise</h3>
                     <p class="card-project__description">FROM AED 2,288,888</p>
-                </figcaption>
-            </figure>
-            <figure class="card-project">
-                <img src="<%=require('../src/assets/images/expo-gold-vilas.jpg')%>" alt="Greak rice" class="card-project__image">
-                <figcaption class="card-project__caption">
+                </div>
+            </a>
+            <a class="card-project" href="#">
+                <img src="<%=require('../src/assets/images/expo-gold-vilas.jpg')%>" alt="Greak rice"
+                    class="card-project__image">
+                <div class="card-project__caption">
                     <h3 class="card-project__title">EXPO GOLF VILLAS 6</h3>
                     <p class="card-project__description">FROM AED 2,288,888</p>
-                </figcaption>
-            </figure>
-            <figure class="card-project">
-                <img src="<%=require('../src/assets/images/hills-park.jpg')%>" alt="Greak rice" class="card-project__image">
-                <figcaption class="card-project__caption">
+                </div>
+            </a>
+            <a class="card-project" href="#">
+                <img src="<%=require('../src/assets/images/hills-park.jpg')%>" alt="Greak rice"
+                    class="card-project__image">
+                <div class="card-project__caption">
                     <h3 class="card-project__title">HILLS PARK</h3>
                     <p class="card-project__description">FROM AED 2,288,888</p>
-                </figcaption>
-            </figure>
+                </div>
+            </a>
         </div>
     </section>
-    <section class="location"></section>
+    <section class="location">
+        <h2 class="location__title">choose the best
+            location for you</h2>
+        <a href="#">
+            <figure class="location__info location__info_type_harbour">
+                <div class="location__target"></div>
+                <figcaption class="location__card">
+                    <img src="<%=require('../src/assets/images/rice.png')%>" alt="" class="location__image">
+                    <span class="location__name">DUBAI CREEK<br>HARBOUR</span>
+                </figcaption>
+            </figure>
+        </a>
+        <a href="#">
+            <figure class="location__info location__info_type_hills">
+                <div class="location__target"></div>
+                <figcaption class="location__card">
+                    <img src="<%=require('../src/assets/images/cove.png')%>" alt="" class="location__image">
+                    <span class="location__name">DUBAI HILLS<br>ESTATE</span>
+                </figcaption>
+            </figure>
+        </a>
+        <a href="#">
+            <figure class="location__info location__info_type_south">
+                <div class="location__target"></div>
+                <figcaption class="location__card">
+                    <img src="<%=require('../src/assets/images/gate.png')%>" alt="" class="location__image">
+                    <span class="location__name">EMAAR SOUTH</span>
+                </figcaption>
+            </figure>
+        </a>
+    </section>
     <section class="projects"></section>
     <section class="facts"></section>
 </body>
