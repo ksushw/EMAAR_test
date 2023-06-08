@@ -73,6 +73,16 @@
         color: $white;
         text-decoration: none;
         margin-right: 5px;
+
+        &:hover {
+            text-decoration: underline;
+            
+        }
+
+        &:active {
+            opacity: 0.8;
+
+        }
     }
 
     &__number {

@@ -126,26 +126,26 @@
 
                 <input type="radio" id="harbour" name="community" value="harbour" class="menu__ratio">
                 <label for="harbour" class="menu__division">dubai creek harbour</label><br>
-            
+
                 <input type="radio" id="hills" name="community" value="hills" class="menu__ratio">
                 <label for="hills" class="menu__division">dubai hills estate</label><br>
-            
+
                 <input type="radio" id="south" name="community" value="south" class="menu__ratio">
                 <label for="south" class="menu__division">emaar south</label>
-              </fieldset>
+            </fieldset>
 
-              <fieldset class="menu__projects">
+            <fieldset class="menu__projects">
                 <legend class="menu__title">Projects</legend>
-                
+
                 <input type="radio" id="rise" name="project" value="0" class="menu__ratio">
                 <label for="rise" class="menu__division">CREEK RISE</label><br>
-            
+
                 <input type="radio" id="cove" name="project" value="1" class="menu__ratio">
                 <label for="cove" class="menu__division">THE COVE</label><br>
-            
+
                 <input type="radio" id="gate" name="project" value="2" class="menu__ratio">
                 <label for="gate" class="menu__division">CREEK GATE</label>
-              </fieldset>
+            </fieldset>
         </nav>
 
 
@@ -216,7 +216,7 @@
 
         <div class="projects__card">
             <div class="card-project">
-                <img src="<%=require('../src/assets/images/gate.png')%>"  alt="Greak rice" class="card-project__image">
+                <img src="<%=require('../src/assets/images/gate.png')%>" alt="Greak rice" class="card-project__image">
                 <div class="card-project__caption">
                     <h3 class="card-project__title"> creek gate</h3>
                     <p class="card-project__description">Be part of Dubai’s future. Live in a new community that
@@ -245,11 +245,61 @@
             </div>
         </div>
     </section>
-    <section class="facts"></section>
+    <section class="facts">
+        <div class="facts__card">
+            <img class="facts__image" src="<%=require('../src/assets/images/couple-on-balcony.png')%>" alt="">
+            <div class="facts__text">
+                <h2 class="facts__title">payment option</h2>
+                <p class="facts__description">Emaar properties offer various payment options to help make your property
+                    purchase as stress-free as possible. Some project have up to 3 Years payment plan and we also offer
+                    mortgage option for ready units. Click "Enquire Now" below to get more information about payment
+                    options available for your purchase.</p>
+                <button class="button button_light facts__button">enquire now</button>
+            </div>
+        </div>
+
+        <div class="facts__card facts__card_left">
+            <img class="facts__image" src="<%=require('../src/assets/images/sunset-sity.png')%>" alt="">
+            <div class="facts__text">
+                <h2 class="facts__title">MORE<br>
+                    ABOUT EMAAR</h2>
+                <p class="facts__description">Emaar is the master-developer of Downtown Dubai, which occupies two of the
+                    most prestigious square kilometres in Dubai. Flanked on either side by Sheikh Zayed Road and
+                    Financial Centre Road, this dynamic city hub has catalysed the economy and cemented Dubai’s
+                    reputation as a true global icon. Providing the ultimate metropolitan lifestyle abounding with
+                    world-class landmarks, entertainment and glamour, Downtown Dubai is a true heart of the emirate.</p>
+            </div>
+        </div>
+    </section>
 </body>
 
-
 <footer class="footer">
+    <img src="<%=require('../src/assets/images/consultant.png')%>" alt="" class="footer__image">
+    <div class="footer__info">
+        <h2 class="footer__title">SPEAK TO A SPECIALIST</h2>
+        <div class="footer__request">
+            <h4 class="footer__subtitle">We are Online</h4>
+            <p class="footer__text">Contact us below to get limited availability, payment plan and to book a unit.</p>
+            <form action="request a call" class="footer__form">
+                <input type="text" class="footer__input footer__input_type_name" placeholder="Your name">
+                <input type="email" class="footer__input footer__input_type_email" placeholder="Your email">
+                <input type="number" class="footer__input footer__input_type_phone" placeholder="Phone number">
+                <button class="footer__button button button_light">request a call</button>
+            </form>
+        </div>
+        <div class="footer__contact">
+            <div class="footer__links">
+                <a href="#" class="footer__link">top projects</a>
+                <a href="#" class="footer__link">community</a>
+                <a href="#" class="footer__link">payment option</a>
+            </div>
+            <span class="footer__number">971 56XXX-XX-XX SHOW</span>
+            <div class="footer__socials">
+                <span class="footer__social footer__social_type_tg">telegram</span>
+                <span class="footer__social footer__social_type_wa">whatsapp</span>
+            </div>
+        </div>
+    </div>
 </footer>
 
 </html>

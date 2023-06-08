@@ -4,16 +4,31 @@
     line-height: 19px;
     text-transform: uppercase;
     height: 40px;
-    padding: 0;
-    border: unset;
+    padding: 0 20px;
+    box-sizing: border-box;
+    border: 1px solid rgba(7, 28, 53, 0.15);
+    transition: 0.3s ease-in-out;
+    background-color: $white;
+
+    &:hover {
+        background-color: rgba(7, 28, 53, 0.7);
+        color: $white;
+    }
+
+    &:active {
+        border: 1px solid rgba(7, 28, 53, 0.7);
+        background-color: $white;
+        color: $dark-blue;
+    }
 
     &_dark {
         background-color: $dark-blue;
         color: $white;
-        transition: 0.3s ease-in-out;
+        
+        border: unset;
 
         &:hover {
-            opacity: 0.8;
+            opacity: 0.7;
         }
 
         &:active {
