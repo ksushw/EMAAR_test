@@ -7,7 +7,6 @@
         grid-template-rows: 1fr min-content 100px;
         max-width: 1300px;
 
-
         &:last-of-type {
             margin-bottom: 0;
         }
@@ -27,10 +26,10 @@
 
     &__image {
         width: 860px;
-        height: 500px;
+        aspect-ratio: 1.72/1;
         object-fit: cover;
-        
         grid-row: 1/3;
+        grid-column: 1/3;
     }
 
     &__text {
@@ -68,4 +67,36 @@ line-height: 24px;
     }
 
     
+}
+
+
+@media (max-width: 1439px) {
+    .facts {
+        &__card {
+            padding: 0 50px;
+            grid-template-columns: 20px 1fr 20px;
+            margin-bottom: 100px;
+        }
+
+        &__image {
+            width: 760px;
+     
+        }
+    
+    }
+}
+
+@media (max-width: 1023px) {
+    .facts {
+        &__card {
+            margin-bottom: 70px;
+            grid-template-columns: 0px 1fr 0px;
+        }
+
+        &__image {
+            width: 100%;
+     
+        }
+
+    }
 }

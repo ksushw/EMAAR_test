@@ -1,6 +1,6 @@
 .header {
     width: 100%;
-    height: 100vh;
+    height: 810px;
     background-image: url(../../images/background-header.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -12,14 +12,14 @@
         align-self: flex-end;
         width: 382px;
         box-sizing: border-box;
-        aspect-ratio: 0.886/1;
+        height: 431px;
         background-color: rgba(7, 28, 53, 0.5);
         backdrop-filter: blur(7.5px);
         padding: 30px 30px 50px;
-        color:  $white;
+        color: $white;
 
         display: grid;
-        gap: 30px;
+        gap: 29px 31px;
         grid-auto-rows: min-content;
         grid-auto-columns: max-content;
         grid-template-areas:
@@ -32,14 +32,13 @@
 
     &__logo {
         grid-area: logo;
-        width: 44%;
-        aspect-ratio: 1/0.198;
+
     }
 
     &__line {
         grid-area: line;
-        border: 0.5px solid $white;
-        width: 31%;
+        border-bottom: 1px solid $white;
+        width: 100px;
     }
 
     &__title {
@@ -49,7 +48,7 @@
         font-size: 30px;
         line-height: 40px;
         text-transform: uppercase;
-        color:  $white;
+        color: $white;
     }
 
     &__book {
@@ -76,7 +75,7 @@
 
         &:hover {
             text-decoration: underline;
-            
+
         }
 
         &:active {
@@ -90,17 +89,45 @@
         font-size: 20px;
         line-height: 40px;
         text-transform: uppercase;
-        color:  $white;
+        color: $white;
     }
 
     &__description {
         margin: 0;
+        margin-top: 2px;
         @include Lotto-light;
         width: min-content;
         font-size: 16px;
         line-height: 19px;
-        color:  $white;
+        color: $white;
     }
 
 
+}
+
+@media (max-width: 1023px) {
+    .header {
+        padding: 50px;
+        height: 100vh;
+    }
+}
+
+@media (max-width: 767px) {
+    .header {
+        padding: 20px;
+
+        &__info {
+            width: fit-content;
+         
+            padding: 20px 20px 25px;
+            height: fit-content;
+            
+            gap: 10px;
+        }
+
+        &__number {
+            display: flex;
+            width: min-content;
+        }
+    }
 }

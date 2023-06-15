@@ -15,7 +15,7 @@
         <div class="header__line"></div>
         <h1 class="header__title">Dubai creek<br>harbour</h1>
         <div class="header__book">
-            <span class="header__number">20%</span>
+            <span class="header__number">20% &nbsp;</span>
             <p class="header__description">to&nbsp;book a&nbsp;unit</p>
         </div>
         <div class="header__years">
@@ -32,34 +32,7 @@
 </header>
 
 <body class="body">
-    <section class="about">
-        <div class="about__image"></div>
-        <div class="about__text">
-            <h2 class="about__title">AVAILABLE HOMES FOR&nbsp;SALE
-                BY&nbsp;EMAAR PROPERTIES</h2>
-            <p class="about__description">
-                Emaar Properties is one of the world’s most valuable and admired real estate development companies. With
-                proven
-                competencies in properties, shopping malls & retail and hospitality & leisure.Emaar Properties is one of
-                the
-                world’s most valuable and admired real estate development companies
-            </p>
-            <div class="about__market-cup">
-                <span class="about__number">$10.9 bln</span>
-                <p class="about__capture">Market cap</p>
-            </div>
-            <div class="about__revenue">
-                <span class="about__number">$7.7 bln</span>
-                <p class="about__capture">Revenue</p>
-            </div>
-            <div class="about__profit">
-                <span class="about__number">$1 bln</span>
-                <p class="about__capture">$1 bln</p>
-            </div>
-            <button class="button button_dark about__button">see more</button>
-        </div>
-    </section>
-    <section class="top-projects">
+  <section class="top-projects">
         <h2 class="top-projects__title">top projects</h2>
         <div class="top-projects__cards">
             <a class="card-project top-projects__card" href="#">
@@ -87,37 +60,38 @@
                 </div>
             </a>
         </div>
-    </section>
+    </section> 
     <section class="location">
-        <h2 class="location__title">choose the best
-            location for you</h2>
-        <a href="#">
-            <figure class="location__info location__info_type_harbour">
-                <div class="location__target"></div>
-                <figcaption class="location__card">
-                    <img src="<%=require('../src/assets/images/rice.png')%>" alt="" class="location__image">
-                    <span class="location__name">DUBAI CREEK<br>HARBOUR</span>
-                </figcaption>
-            </figure>
-        </a>
-        <a href="#">
-            <figure class="location__info location__info_type_hills">
-                <div class="location__target"></div>
-                <figcaption class="location__card">
-                    <img src="<%=require('../src/assets/images/cove.png')%>" alt="" class="location__image">
-                    <span class="location__name">DUBAI HILLS<br>ESTATE</span>
-                </figcaption>
-            </figure>
-        </a>
-        <a href="#">
-            <figure class="location__info location__info_type_south">
-                <div class="location__target"></div>
-                <figcaption class="location__card">
-                    <img src="<%=require('../src/assets/images/gate.png')%>" alt="" class="location__image">
-                    <span class="location__name">EMAAR SOUTH</span>
-                </figcaption>
-            </figure>
-        </a>
+        <h2 class="location__title">choose the best location for you</h2>
+        <div class="location__map">
+            <a href="#">
+                <figure class="location__info location__info_type_harbour">
+                    <div class="location__target"></div>
+                    <figcaption class="location__card">
+                        <img src="<%=require('../src/assets/images/rice.png')%>" alt="" class="location__image">
+                        <span class="location__name">DUBAI CREEK<br>HARBOUR</span>
+                    </figcaption>
+                </figure>
+            </a>
+            <a href="#">
+                <figure class="location__info location__info_type_hills">
+                    <div class="location__target"></div>
+                    <figcaption class="location__card">
+                        <img src="<%=require('../src/assets/images/cove.png')%>" alt="" class="location__image">
+                        <span class="location__name">DUBAI HILLS<br>ESTATE</span>
+                    </figcaption>
+                </figure>
+            </a>
+            <a href="#">
+                <figure class="location__info location__info_type_south">
+                    <div class="location__target"></div>
+                    <figcaption class="location__card">
+                        <img src="<%=require('../src/assets/images/gate.png')%>" alt="" class="location__image">
+                        <span class="location__name">EMAAR SOUTH</span>
+                    </figcaption>
+                </figure>
+            </a>
+        </div>
     </section>
     <section class="projects">
         <nav class="projects__navigation menu">
@@ -245,6 +219,7 @@
             </div>
         </div>
     </section>
+
     <section class="facts">
         <div class="facts__card">
             <img class="facts__image" src="<%=require('../src/assets/images/couple-on-balcony.png')%>" alt="">
@@ -289,17 +264,73 @@
         </div>
         <div class="footer__contact">
             <div class="footer__links">
-                <a href="#" class="footer__link">top projects</a>
-                <a href="#" class="footer__link">community</a>
-                <a href="#" class="footer__link">payment option</a>
+                <a href="#" class="link footer__link">top projects</a>
+                <a href="#" class="link footer__link">community</a>
+                <a href="#" class="link footer__link">payment option</a>
             </div>
             <span class="footer__number">971 56XXX-XX-XX SHOW</span>
-            <div class="footer__socials">
-                <span class="footer__social footer__social_type_tg">telegram</span>
-                <span class="footer__social footer__social_type_wa">whatsapp</span>
+            <div class="socials footer__socials">
+                <a class="socials__item socials__item_type_tg">telegram</a>
+                <a class="socials__item socials__item_type_wa">whatsapp</a>
             </div>
         </div>
     </div>
 </footer>
+
+<div class="popup popup_type_window">
+    <div class="popup__window">
+        <div class="popup__contact-us">
+            <div class="popup__logo popup__logo_type_transform">
+                <img src="<%=require('../src/assets/images/logo-background-none.svg')%>" alt="Лого"
+                    class="popup__logo-img">
+            </div>
+            <div class="socials">
+                <h3 class="socials__title">contact us right now</h3>
+                <span class="socials__item socials__item_type_tg">telegram</span>
+                <span class="socials__item socials__item_type_wa">whatsapp</span>
+            </div>
+        </div>
+        <form class="form form_type_brochure">
+            <h2 class="form__title">download<br>brochure</h2>
+            <input type="text" class="form__input" placeholder="Your name">
+            <input type="email" class="form__input" placeholder="Your e-mail">
+            <input type="number" class="form__input" placeholder="Your phone">
+            <button class="button button_light">Download brochure</button>
+        </form>
+        <button class="button button_light popup__button_type_window">close</button>
+    </div>
+</div>
+
+<div class="popup popup_type_window popup_with-image">
+
+    <div class="popup__window">
+        <img src="<%=require('../src/assets/images/popup-back-img-1.png')%>" alt=""
+            class="popup__background popup__background_position_top">
+        <img src="<%=require('../src/assets/images/popup-back-img-2.png')%>" alt=""
+            class="popup__background popup__background_position_bottom">
+        <div class="popup__contact-us">
+            <img src="<%=require('../src/assets/images/logo-background-white.svg')%>" alt="Лого"
+                class="popup__logo-img">
+            <div class="socials">
+                <h3 class="socials__title">contact us right now</h3>
+                <a class="socials__item socials__item_type_tg">telegram</a>
+                <a class="socials__item socials__item_type_wa">whatsapp</a>
+            </div>
+        </div>
+        <form class="form form_type_offer">
+            <h2 class="form__title">get a unique offer</h2>
+            <input type="text" class="form__input" placeholder="Your name">
+            <input type="email" class="form__input" placeholder="Your e-mail">
+            <input type="number" class="form__input" placeholder="Your phone">
+            <button class="button button_dark form__button">enquire</button>
+            <div class="form__links">
+                <a href="#" class="link form__link">Handover dates</a>
+                <a href="#" class="link form__link">Project's</a>
+                <a href="#" class="link form__link">Masterplan</a>
+            </div>
+        </form>
+        <button class="button button_light popup__button_type_window">close</button>
+    </div>
+</div>
 
 </html>
