@@ -1,0 +1,44 @@
+.offer {
+    padding: 0 250px 150px;
+
+    &__title {
+        @include Alethia;
+        text-align: center;
+        font-size: 54px;
+        line-height: normal;
+        text-transform: uppercase;
+        margin: 0;
+        width: 100%
+    }
+
+    &__subtitle {
+        @include Lotto-light;
+        text-align: center;
+        font-size: 16px;
+        line-height: 150%;
+        text-transform: uppercase;
+        margin: 0 auto;
+    }
+
+    &__payment {
+        margin: 0 auto 150px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 500px;
+        gap: 50px 100px;
+
+    }
+
+    &__contact {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__procentage {
+        @include Alethia;
+        font-size: 100px;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+}

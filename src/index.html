@@ -32,7 +32,7 @@
 </header>
 
 <body class="body">
-  <section class="top-projects">
+    <section class="top-projects">
         <h2 class="top-projects__title">top projects</h2>
         <div class="top-projects__cards">
             <a class="card-project top-projects__card" href="#">
@@ -60,7 +60,7 @@
                 </div>
             </a>
         </div>
-    </section> 
+    </section>
     <section class="location">
         <h2 class="location__title">choose the best location for you</h2>
         <div class="location__map">
@@ -219,7 +219,6 @@
             </div>
         </div>
     </section>
-
     <section class="facts">
         <div class="facts__card">
             <img class="facts__image" src="<%=require('../src/assets/images/couple-on-balcony.png')%>" alt="">
@@ -302,7 +301,6 @@
 </div>
 
 <div class="popup popup_type_window popup_with-image">
-
     <div class="popup__window">
         <img src="<%=require('../src/assets/images/popup-back-img-1.png')%>" alt=""
             class="popup__background popup__background_position_top">
@@ -331,6 +329,130 @@
         </form>
         <button class="button button_light popup__button_type_window">close</button>
     </div>
+</div>
+
+<div class="popup popup_opened">
+    <div class="modal-page">
+        <div class="modal-page__header">
+            <h2 class="title">creek rise</h2>
+            <button class="button button_light close">close</button>
+        </div>
+        <section class="introduce">
+            <img src="<%=require('../src/assets/images/greek-rice3.png')%>" alt="greek rice" class="introduce__image">
+            <div class="introduce__about">
+                <div class="introduce__info">
+                    <p class="introduce__title">type</p>
+                    <span class="introduce__value">Apartment</span>
+                </div>
+                <div class="introduce__info">
+                    <p class="introduce__title">bedrooms</p>
+                    <span class="introduce__value">1-3</span>
+                </div>
+                <div class="introduce__info">
+                    <p class="introduce__title">total area from</p>
+                    <span class="introduce__value">1097 sq. ft.</span>
+                </div>
+                <div class="introduce__info">
+                    <p class="introduce__title">price from</p>
+                    <span class="introduce__value">AED 2 268 888</span>
+                </div>
+                <button class="button button_dark introduce__button">enquer now</button>
+            </div>
+            <div class="introduce__description">Creek Rise comprises two beautifully designed residential high-rises
+                with unparalleled views overlooking the Creek Island’s lush parkland, set in a family-oriented
+                neighbourhood.</div>
+        </section>
+        <section class="infrastructure">
+            <div class="infrastructure__card">
+                <img src="<%=require('../src/assets/images/greek-tower.svg')%>" alt="greek tower"
+                    class="infrastructure__image">
+                <p class="infrastructure__name">creek&nbsp;tower</p>
+                <span class="infrastructure__distance">10min</span>
+                <div class="infrastructure__stick"></div>
+                <div class="infrastructure__circle"></div>
+            </div>
+            <div class="infrastructure__card infrastructure__card_reverse">
+                <div class="infrastructure__circle"></div>
+                <div class="infrastructure__stick"></div>
+
+                <img src="<%=require('../src/assets/images/airport.svg')%>" alt="greek tower"
+                    class="infrastructure__image">
+                <p class="infrastructure__name">Airport</p>
+                <span class="infrastructure__distance">15min</span>
+
+            </div>
+            <div class="infrastructure__card">
+                <img src="<%=require('../src/assets/images/burdg-khalifa.svg')%>" alt="greek tower"
+                    class="infrastructure__image">
+                <p class="infrastructure__name">burj&nbsp;halifa</p>
+                <span class="infrastructure__distance">20min</span>
+                <div class="infrastructure__stick"></div>
+                <div class="infrastructure__circle"></div>
+            </div>
+
+            <div class="infrastructure__card infrastructure__card_reverse">
+                <div class="infrastructure__circle"></div>
+                <div class="infrastructure__stick"></div>
+
+                <img src="<%=require('../src/assets/images/burdj-al-araba.svg')%>" alt="greek tower"
+                    class="infrastructure__image">
+                <p class="infrastructure__name">burdj&nbsp;al&nbsp;arab</p>
+                <span class="infrastructure__distance">30min</span>
+
+            </div>
+            <div class="infrastructure__card">
+                <img src="<%=require('../src/assets/images/palm-jumeirah.svg')%>" alt="greek tower"
+                    class="infrastructure__image">
+                <p class="infrastructure__name">Palm&nbsp;Jumeirah</p>
+                <span class="infrastructure__distance">35min</span>
+                <div class="infrastructure__stick"></div>
+                <div class="infrastructure__circle"></div>
+            </div>
+            <div class="infrastructure__line"></div>
+            <button class="button button_dark infrastructure__button">map view</button>
+        </section>
+        <section class="gallery">
+            <h2 class="gallery__title">gallery</h2>
+            <div class="gallery__pictures">
+                <img class="gallery__first" src="<%=require('../src/assets/images/greek-rice2.png')%>" alt="greek rice">
+                <img class="gallery__second" src="<%=require('../src/assets/images/gallery-image2.png')%>"
+                    alt="greek rice">
+                <img class="gallery__third" src="<%=require('../src/assets/images/gallery-image3.png')%>"
+                    alt="greek rice">
+            </div>
+        </section>
+        <section class="offer">
+            <div class="offer__payment">
+                <h3 class="offer__title">payment plan</h3>
+                
+                    <div class="offer__numbers">
+                        <span class="offer__procentage">20%</span>
+                        <p class="offer__subtitle">1st Installment</p>
+                    </div>
+                    <div class="offer__numbers">
+                        <span class="offer__procentage">80%</span>
+                        <p class="offer__subtitle">On Handover</p>
+                    </div>
+                
+                
+            </div>
+            <div class="offer__contact">
+                <h3 class="offer__title">more unique offers</h3>
+                <p class="offer__subtitle">contact us and our specialists will select the best offer for you</p>
+                <form action="request a call" class="footer__form">
+                    <input type="text" class="footer__input footer__input_type_name" placeholder="Your name">
+                    <input type="email" class="footer__input footer__input_type_email" placeholder="Your email">
+                    <input type="number" class="footer__input footer__input_type_phone" placeholder="Phone number">
+                    <button class="footer__button button button_dark">request a call</button>
+                </form>
+            </div>
+
+            
+        </section>
+        <div class="modal-page__bottom-line"></div>
+    </div>
+
+
 </div>
 
 </html>

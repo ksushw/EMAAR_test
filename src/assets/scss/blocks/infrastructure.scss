@@ -1,0 +1,83 @@
+.infrastructure {
+    padding: 100px 170px;
+    height: 448px;
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    position: relative;
+
+
+    &__line {
+        width: calc(100% - 140px);
+        border: 1px solid $dark-blue;
+        align-self: center;
+        position: absolute;
+        top: 50%;
+        left: 70px;
+    }
+
+    &__button {
+       position: absolute;
+       left: 50%;
+       bottom: 208px;
+       translate: -50%;
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: end;
+        height: calc(50% + 9px);
+
+        &_reverse {
+            justify-content: start;
+            align-self: flex-end;
+            height: calc(50% + 6px);
+
+            .infrastructure__stick {
+                margin-top: 0;
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    &__image {
+        margin-bottom: 17px;
+    }
+
+    &__name {
+        @include Lotto-light;
+        font-size: 20px;
+        text-transform: uppercase;
+        margin: 0;
+        line-height: normal;
+        text-align: center;
+    }
+
+    &__distance {
+        @include Lotto-medium;
+        font-size: 30px;
+        line-height: normal;
+        text-align: center;
+    }
+
+    &__stick {
+        margin-top: 8px;
+        height: 26px;
+        width: 2px;
+        background-color: $dark-blue;
+    }
+
+    &__circle {
+        translate: -0.5px;
+        background-color: $dark-blue;
+        border-radius: 50%;
+        width: 16px;
+        height: 16px;
+    }
+
+    &__image {
+        height: 100px;
+        object-fit: contain;
+    }
+}
