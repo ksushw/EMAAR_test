@@ -42,3 +42,13 @@
         text-transform: uppercase;
     }
 }
+
+
+@media (max-width: 1024px) {
+    .offer {
+        padding: 0 100px 100px;
+        &__payment{
+            margin-bottom: 100px;
+        }
+    }
+}
