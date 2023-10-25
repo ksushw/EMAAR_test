@@ -1,121 +1,136 @@
 .slider {
-    padding: 50px 14px 0;
-    display: grid;
-    grid-template-columns: 50px 1fr 1fr 50px;
-    gap: 18px 20px;
-    grid-template-areas:
-        ". title number ."
-        "arrow-left card card arrow-right";
+  padding: 50px 14px 0;
+  display: grid;
+  grid-template-columns: 50px 1fr 1fr 50px;
+  gap: 18px 20px;
+  grid-template-areas:
+    ". title number ."
+    "arrow-left card card arrow-right";
 
-    &__title {
-        @include Alethia;
-        font-size: 30px;
-        line-height: 40px;
-        text-transform: uppercase;
-        grid-area: title;
-        margin: 0;
-    }
+  &__title {
+    @include Alethia;
+    font-size: 30px;
+    line-height: 40px;
+    text-transform: uppercase;
+    grid-area: title;
+    margin: 0;
+  }
 
-    &__number {
-        @include Lotto-light;
-        font-size: 30px;
-        line-height: 40px;
-        text-transform: uppercase;
-        justify-self: end;
-        grid-area: number;
-    }
+  &__number {
+    @include Lotto-light;
+    font-size: 30px;
+    line-height: 40px;
+    text-transform: uppercase;
+    justify-self: end;
+    grid-area: number;
+  }
 
-    &__arrow {
-        padding: 0;
-        align-self: center;
-        border: none;
-        background-image: url(../../images/slider-arrow.svg);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-color: transparent;
-        height: 10px;
-    }
+  &__arrow {
+    padding: 0;
+    align-self: center;
+    border: none;
+    background-image: url(../../images/slider-arrow.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
+    height: 10px;
+  }
 
-    &__arrow_direction_left {
-        grid-area: arrow-left;
-    }
+  &__arrow_direction_left {
+    grid-area: arrow-left;
+  }
 
-    &__arrow_direction_right {
-        grid-area: arrow-right;
-        transform: rotate(180deg);
-    }
+  &__arrow_direction_right {
+    grid-area: arrow-right;
+    transform: rotate(180deg);
+  }
 
-    &__card {
-        grid-area: card;
-        display: flex;
-        border: 1px solid rgba(0, 0, 0, 0.05);
-        box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.07);
-    }
+  &__card {
+    grid-area: card;
+    display: flex;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.07);
+  }
 
-    &__image {
-        width: 58.66%;
-        aspect-ratio: 1.1/1;
-        object-fit: contain;
-    }
+  &__image {
+    width: 58.66%;
+    aspect-ratio: 1.1/1;
+    object-fit: contain;
+  }
 
-    &__info {
-        padding: 30px;
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-    }
+  &__info {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
 
-    &__header {
-        @include Alethia;
-        margin: 0;
-        font-size: 30px;
-        line-height: 40px;
-        text-transform: uppercase;
-    }
+  &__header {
+    @include Alethia;
+    margin: 0;
+    font-size: 30px;
+    line-height: 40px;
+    text-transform: uppercase;
+  }
 
-    &__rooms {
-        @include Lotto-regular;
-        font-size: 16px;
-        line-height: 19px;
-        padding-left: 30px;
-        background-image: url(../../images/bedroom.svg);
-        background-repeat: no-repeat;
-        background-position: 0 center;
-    }
+  &__rooms {
+    @include Lotto-regular;
+    font-size: 16px;
+    line-height: 19px;
+    padding-left: 30px;
+    background-image: url(../../images/bedroom.svg);
+    background-repeat: no-repeat;
+    background-position: 0 center;
+  }
 
-    &__description {
-        @include Lotto-light;
-        margin: 0;
-        font-size: 16px;
-        line-height: 24px;
-        color: $grey;
-    }
+  &__description {
+    @include Lotto-light;
+    margin: 0;
+    font-size: 16px;
+    line-height: 24px;
+    color: $grey;
+  }
 
-    &__price {
-        @include Lotto-regular;
-        font-size: 16px;
-        line-height: 40px;
-        text-transform: uppercase;
+  &__price {
+    @include Lotto-regular;
+    font-size: 16px;
+    line-height: 40px;
+    text-transform: uppercase;
+  }
 
-    }
-
-    &__button {
-        width: 100%;
-    }
-
-
+  &__button {
+    width: 100%;
+  }
 }
 
 @media (max-width: 1439px) {
-    .slider {
-        padding: 50px 0px 0;
-        grid-template-columns: 30px 1fr 1fr 30px;
-        gap: 10px;
+  .slider {
+    padding: 50px 0px 0;
+    grid-template-columns: 30px 1fr 1fr 30px;
+    gap: 10px;
 
-        &__info {
-            padding: 15px;
-            gap: 10px;
-        }
-
+    &__info {
+      padding: 15px;
+      gap: 10px;
     }
+  }
+}
+
+@media (max-width: 767px) {
+  .slider {
+    padding: 30px 0px 0;
+    gap: 0px 0px;
+    margin-top: 20px;
+
+    &__card {
+      grid-area: card;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__image {
+      width: 100%;
+    }
+  }
 }

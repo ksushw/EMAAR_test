@@ -1,162 +1,185 @@
 .footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 97px 70px 0;
+  background-image: url(../../images/logo-background-none.svg),
+    linear-gradient($white 62.79%, $dark-blue 62.79%);
+  background-position: bottom 89px right 70px, bottom;
+  background-repeat: no-repeat;
+
+  &__image {
+    width: 313px;
+  }
+
+  &__info {
+    width: 868px;
+    display: grid;
+    grid-template-rows: repeat(2, min-content) 1fr;
+  }
+
+  &__title {
+    margin: 0;
+    @include Alethia;
+    font-size: 44px;
+    line-height: 40px;
+    text-transform: uppercase;
+
+    &::after {
+      content: "";
+      display: block;
+      height: 18px;
+      background-color: $light-grey;
+      margin-top: 7px;
+    }
+  }
+
+  &__subtitle {
+    margin: 0;
+    height: 50px;
+    padding-left: 24px;
+    text-align: center;
+    width: fit-content;
     display: flex;
-    justify-content: space-between;
-    padding: 97px 70px 0;
-    background-image: url(../../images/logo-background-none.svg), linear-gradient($white 62.79%, $dark-blue 62.79%);
-    background-position: bottom 89px right 70px, bottom;
+    align-items: center;
+    background-image: radial-gradient(
+      circle closest-corner at 35% 50%,
+      $salad-green 50%,
+      transparent 50%
+    );
+    background-position: -13px;
     background-repeat: no-repeat;
+    @include Lotto-medium;
+    font-size: 16px;
+    line-height: 24px;
+  }
 
-    &__image {
-        width: 313px;
-    }
+  &__request {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 35px;
+    margin-left: 8px;
+  }
 
-    &__info {
-        width: 868px;
-        display: grid;
-        grid-template-rows: repeat(2, min-content) 1fr;
-    }
+  &__text {
+    max-width: 434px;
+    margin: 0;
+    margin-left: 35px;
+    align-self: flex-end;
+    @include Lotto-light;
+    font-size: 16px;
+    line-height: 24px;
+    color: $grey;
+  }
+
+  &__form {
+    margin-top: 46px;
+    display: flex;
+    gap: 20px;
+  }
+
+  &__input {
+    padding: 0 10px;
+    margin: 0;
+    height: 40px;
+    width: 25%;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid rgba(7, 28, 53, 0.1);
+    @include Lotto-light;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  &__button {
+    width: 200px;
+  }
+
+  &__contact {
+    align-self: end;
+    width: 540px;
+    padding: 0 0 79px 8px;
+    display: flex;
+    gap: 30px 50px;
+    flex-wrap: wrap;
+  }
+
+  &__links {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__link {
+    color: $white;
+  }
+
+  &__number {
+    @include Lotto-regular;
+    font-size: 20px;
+    line-height: 24px;
+    color: $white;
+  }
+
+  &__socials {
+    grid-template-areas: "tg wa";
+  }
+}
+
+@media (max-width: 1023px) {
+  .footer {
+    padding: 59px 50px 0;
+    background-image: url(../../images/logo-background-none.svg),
+      linear-gradient($white 65.79%, $dark-blue 65.79%);
+    background-position: bottom 50px right 70px, bottom;
 
     &__title {
-        margin: 0;
-        @include Alethia;
-        font-size: 44px;
-        line-height: 40px;
-        text-transform: uppercase;
-
-        &::after {
-            content: "";
-            display: block;
-            height: 18px;
-            background-color: $light-grey;
-            margin-top: 7px;
-        }
-    }
-
-    &__subtitle {
-        margin: 0;
-        height: 50px;
-        padding-left: 24px;
-        text-align: center;
-        width: fit-content;
-        display: flex;
-        align-items: center;
-        background-image: radial-gradient(circle closest-corner at 35% 50%, $salad-green 50%, transparent 50%);
-        background-position: -13px;
-        background-repeat: no-repeat;
-        @include Lotto-medium;
-        font-size: 16px;
-        line-height: 24px;
+      &::after {
+        margin-top: 10px;
+      }
     }
 
     &__request {
-        display: flex;
-        flex-wrap: wrap;
-        margin-top: 35px;
-        margin-left: 8px;
+      margin: 30px 0 0 0;
+      width: 100%;
     }
 
     &__text {
-        max-width: 434px;
-        margin: 0;
-        margin-left: 35px;
-        align-self: flex-end;
-        @include Lotto-light;
-        font-size: 16px;
-        line-height: 24px;
-        color: $grey;
+      width: 100%;
     }
 
-    &__form {
-        margin-top: 46px;
-        display: flex;
-        gap: 20px;
+    &__info {
+      width: 100%;
     }
 
-    &__input {
-        padding: 0 10px;
-        margin: 0;
-        height: 40px;
-        width: 25%;
-        box-sizing: border-box;
-        border: none;
-        border-bottom: 1px solid rgba(7, 28, 53, 0.1);
-        @include Lotto-light;
-        font-size: 16px;
-        line-height: 19px;
-    }
-
-    &__button {
-        width: 200px;
+    &__image {
+      display: none;
     }
 
     &__contact {
-        align-self: end;
-        width: 540px;
-        padding: 0 0 79px 8px;
-        display: flex;
-        gap: 30px 50px;
-        flex-wrap: wrap;
+      padding: 50px 0 60px;
     }
-
-    &__links {
-        display: flex;
-        gap: 30px;
-    }
-
-    &__link {
-        color: $white;
-    }
-
-    &__number {
-        @include Lotto-regular;
-        font-size: 20px;
-        line-height: 24px;
-        color: $white;
-    }
-
-    &__socials {
-        grid-template-areas: "tg wa";
-    }
-}
-
-
-@media (max-width: 1023px) {
-    .footer {
-        padding: 59px 50px 0;
-        background-image: url(../../images/logo-background-none.svg), linear-gradient($white 65.79%, $dark-blue 65.79%);
-        background-position: bottom 50px right 70px, bottom;
-
-        &__title{
-            &::after {
-                margin-top: 10px;
-            }
-        }
-
-        &__request {
-            margin: 30px 0 0 0;
-width: 100%;
-        }
-
-        &__text {
-            width: 100%;
-        }
-
-
-        &__info {
-            width: 100%;
-        }
-
-        &__image {
-            display: none;
-        }
-
-        &__contact {
-
-            padding: 50px 0 60px;
-        }
-    }
+  }
 }
 
 @media (max-width: 767px) {
-    .footer {}
+  .footer {
+    padding: 59px 30px 0;
+    background-image: url(../../images/logo-background-none.svg),
+      linear-gradient($white 73%, $dark-blue 73%);
+    &__contact {
+      width: 100%;
+      padding: 50px 0 30px;
+    }
+
+    &__form {
+      margin-top: 20px;
+      width: 100%;
+      gap: 10px;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    &__input {
+      width: 100%;
+    }
+  }
 }

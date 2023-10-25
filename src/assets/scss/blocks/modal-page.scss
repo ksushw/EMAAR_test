@@ -1,32 +1,40 @@
 .modal-page {
+  width: 100%;
+  background-color: $white;
+  height: 100vh;
+  overflow: scroll;
+
+  &__header {
+    padding: 35px 70px 35px 63px;
+    display: flex;
     width: 100%;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
     background-color: $white;
-    height: 100vh;
-    overflow: scroll;
-    
+  }
+
+  .title {
+    @include Alethia;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  .close {
+    padding: 7px;
+    border: 0;
+  }
+
+  &__bottom-line {
+    height: 30px;
+    background-color: $dark-blue;
+  }
+}
+
+@media (max-width: 767px) {
+  .modal-page {
     &__header {
-        padding: 35px 70px 35px 63px;
-        display: flex;
-        width: 100%;
-        box-sizing: border-box;
-        justify-content: space-between;
-        align-items: center;
-        background-color: $white;
+      padding: 20px;
     }
-
-    .title {
-        @include Alethia;
-        text-transform: uppercase;
-        margin: 0;
-    }
-
-    .close {
-        padding: 7px;
-        border: 0;
-    }
-
-    &__bottom-line {
-        height: 30px;
-        background-color: $dark-blue;
-    }
+  }
 }

@@ -1,55 +1,51 @@
 .socials {
-    display: grid;
-    gap: 30px;
-    grid-area: socials;
-    width: fit-content;
-    grid-template-columns: min-content;
-    grid-template-areas: "title title"
-        "tg wa";
-    cursor: pointer;
+  display: grid;
+  gap: 30px;
+  grid-area: socials;
+  width: fit-content;
+  grid-template-columns: min-content;
+  grid-template-areas:
+    "title title"
+    "tg wa";
+  cursor: pointer;
 
-    &__title {
-        grid-area: title;
-        margin: 0;
-        @include Lotto-regular;
-        font-size: 16px;
-        line-height: 19px;
-        text-align: center;
-        text-transform: uppercase;
-        color: $white;
+  &__title {
+    grid-area: title;
+    margin: 0;
+    @include Lotto-regular;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $white;
+  }
 
+  &__item {
+    padding-right: 30px;
+    @include Lotto-regular;
+    font-size: 16px;
+    line-height: 19px;
+    color: $white;
+    background-position: right 50%;
+    background-repeat: no-repeat;
+    transition: 0.3s;
+
+    &_type_tg {
+      background-image: url(../../images/logo-tg.svg);
+      grid-area: tg;
     }
 
-    &__item {
-        padding-right: 30px;
-        @include Lotto-regular;
-        font-size: 16px;
-        line-height: 19px;
-        color: $white;
-        background-position: right 50%;
-        background-repeat: no-repeat;
-        transition: 0.3s;
-
-        &_type_tg {
-            background-image: url(../../images/logo-tg.svg);
-            grid-area: tg;
-        }
-
-        &_type_wa {
-            background-image: url(../../images/logo-wa.svg);
-            grid-area: wa;
-        }
-
-        &:hover {
-            text-decoration: underline;
-
-        }
-
-        &:active {
-            opacity: 0.8;
-
-        }
+    &_type_wa {
+      background-image: url(../../images/logo-wa.svg);
+      grid-area: wa;
     }
 
-    
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &:active {
+      opacity: 0.8;
+    }
+  }
 }

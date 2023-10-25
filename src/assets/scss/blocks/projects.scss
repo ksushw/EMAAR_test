@@ -1,44 +1,62 @@
 .projects {
-    display: flex;
-    align-items: end;
-    flex-direction: column;
-    width: 100%;
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 26px 70px 179px;
+  position: relative;
+
+  &__card {
+    width: 74.6154%;
+    padding: 25px 23px 50px 25px;
     box-sizing: border-box;
-    padding: 26px 70px 179px;
-    position: relative;
+    border: 1px solid rgba(7, 28, 53, 0.1);
+    margin-bottom: 90px;
 
-    &__card {
-        width: 74.6154%;
-        padding: 25px 23px 50px 25px;
-        box-sizing: border-box;
-        border: 1px solid rgba(7, 28, 53, 0.1);
-        margin-bottom: 90px;
-
-        &:last-of-type {
-            margin: 17px 0 0;
-        }
+    &:last-of-type {
+      margin: 17px 0 0;
     }
-
+  }
 }
 
 @media (max-width: 1439px) {
-    .projects {
-        padding: 50px 50px 100px;
-        &__card {
-            padding: 20px 20px 40px 20px;
-            width: 72%;
-            margin-bottom: 50px;
-        }
+  .projects {
+    padding: 50px 50px 100px;
+    &__card {
+      padding: 20px 20px 40px 20px;
+      width: 72%;
+      margin-bottom: 50px;
     }
+  }
 }
 
 @media (max-width: 1023px) {
-    .projects {
-        &__card {
-            padding: 20px 20px 40px 20px;
-            width: 100%;
-            margin-bottom: 30px;
-        }
+  .projects {
+    &__card {
+      padding: 20px 20px 40px 20px;
+      width: 100%;
+      margin-bottom: 30px;
     }
+  }
 }
 
+@media (max-width: 767px) {
+  .projects {
+    padding: 20px 10px 50px;
+    &__card {
+      padding: 10px 10px 10px 10px;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .card-project {
+      &__caption {
+        font-size: 23px;
+        padding: 10px;
+      }
+      &__image {
+        height: 300px;
+      }
+    }
+  }
+}

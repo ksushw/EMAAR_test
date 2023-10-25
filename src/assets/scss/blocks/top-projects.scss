@@ -56,8 +56,19 @@
     }
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1024px) {
     .top-projects {
+        padding: 100px 50px 70px;
+        &__cards {
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .top-projects {
+        padding: 70px 30px;
         &__cards {
             grid-template-columns: 1fr;
             gap: 20px;

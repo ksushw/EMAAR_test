@@ -96,24 +96,35 @@
         }
       }
     }
+    &__name {
+      font-size: 12px;
+    }
+
+    &__distance {
+      font-size: 20px;
+    }
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .infrastructure {
-    padding: 80px 30px 90px;
+    padding: 30px 20px 50px;
     &__card {
-      height: calc(50% + 12px);
+      height: calc(50% + 18px);
       &_reverse {
-        height: calc(50% + 1px);
+        height: calc(50% - 3px);
         .infrastructure__stick {
-          margin-bottom: 6px;
+          margin-bottom: 5px;
         }
       }
     }
     &__image {
-      height: 70px;
+      height: 45px;
       object-fit: contain;
+    }
+    &__line {
+      width: 90%;
+      left: 5%;
     }
   }
 }
