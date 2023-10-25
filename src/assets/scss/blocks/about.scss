@@ -1,176 +1,189 @@
 .about {
-    padding: 153px 76px 0;
+  padding: 153px 76px 0;
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 498px 1fr;
+  gap: 61px;
+
+  &__image {
+    position: relative;
+    background-image: url(../../images/about-image.png);
+    width: 498px;
+    height: 547px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow: hidden;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url(../../images/about-image-mask.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      opacity: 0.5;
+    }
+  }
+
+  &__text {
+    align-self: center;
     display: grid;
-    justify-content: space-between;
-    grid-template-columns: 498px 1fr;
-    gap: 61px;
+    grid-auto-columns: fit-content;
+    grid-template-areas:
+      "title title title"
+      "description description description"
+      "market-cup revenue profit"
+      "button button button";
+    gap: 50px 91px;
+  }
 
-    &__image {
-        position: relative;
-        background-image: url(../../images/about-image.png);
-        width: 498px;
-        height: 547px;
-        background-repeat: no-repeat;
-        background-size: contain;
-        overflow: hidden;
+  &__title {
+    @include Alethia;
+    font-size: 44px;
+    line-height: 120%;
+    grid-area: title;
+    text-transform: uppercase;
+    margin: 0;
+  }
 
-        &::after {
-            content: "";
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: url(../../images/about-image-mask.svg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            opacity: 0.5;
-        }
+  &__description {
+    @include Lotto-light;
+    font-size: 16px;
+    line-height: 24px;
+    grid-area: description;
+    margin: 0;
+    color: $grey;
+  }
 
-    }
+  &__market-cup {
+    grid-area: market-cup;
+  }
 
-    &__text {
-        align-self: center;
-        display: grid;
-        grid-auto-columns: fit-content;
-        grid-template-areas:
-            "title title title"
-            "description description description"
-            "market-cup revenue profit"
-            "button button button";
-        gap: 50px 91px;
-    }
+  &__revenue {
+    grid-area: revenue;
+  }
 
-    &__title {
-        @include Alethia;
-        font-size: 44px;
-        line-height: 120%;
-        grid-area: title;
-        text-transform: uppercase;
-        margin: 0;
-    }
+  &__profit {
+    grid-area: profit;
+  }
 
-    &__description {
-        @include Lotto-light;
-        font-size: 16px;
-        line-height: 24px;
-        grid-area: description;
-        margin: 0;
-        color: $grey;
-    }
+  &__button {
+    grid-area: button;
+    width: 200px;
+  }
 
-    &__market-cup {
-        grid-area: market-cup;
+  &__number {
+    @include Alethia;
+    font-size: 44px;
+    line-height: 44px;
+  }
 
-    }
-
-    &__revenue {
-        grid-area: revenue;
-    }
-
-    &__profit {
-        grid-area: profit;
-    }
-
-    &__button {
-        grid-area: button;
-        width: 200px;
-    }
-
-    &__number {
-        @include Alethia;
-        font-size: 44px;
-        line-height: 44px;
-    }
-
-    &__capture {
-        @include Lotto-light;
-        font-size: 16px;
-        line-height: 19px;
-        text-transform: uppercase;
-        margin: 0;
-        margin-top: 20px;
-    }
-
-
+  &__capture {
+    @include Lotto-light;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    margin: 0;
+    margin-top: 20px;
+  }
 }
 
 @media (max-width: 1439px) {
-    .about {
-        padding: 70px 50px 0;
-        gap: 30px;
-        box-sizing: border-box;
-        grid-template-columns: 50% 1fr;
-        grid-template-rows: max-content;
+  .about {
+    padding: 70px 50px 0;
+    gap: 30px;
+    box-sizing: border-box;
+    grid-template-columns: 50% 1fr;
+    grid-template-rows: max-content;
 
-        &__image {
-            width: 100%;
-            aspect-ratio: 1/1.09;
-            height: unset;
-        }
-
-        &__text {
-            gap: 20px;
-        }
-
-        &__number {
-            display: block;
-            width: min-content;
-        }
-
-        &__button {
-            margin-top: 20px;
-            width: 50%;
-        }
+    &__image {
+      width: 100%;
+      aspect-ratio: 1/1.09;
+      height: unset;
     }
 
+    &__text {
+      gap: 20px;
+    }
 
+    &__number {
+      display: block;
+      width: min-content;
+    }
 
-
+    &__button {
+      margin-top: 20px;
+      width: 50%;
+    }
+  }
 }
 
 @media (max-width: 1023px) {
-    .about {
-        margin: 0 auto;
-        width: 768px;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, min-content);
-        padding: 100px 50px 0;
-        gap: 30px;
-        box-sizing: border-box;
+  .about {
+    margin: 0 auto;
+    width: 768px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, min-content);
+    padding: 100px 50px 0;
+    gap: 30px;
+    box-sizing: border-box;
 
-        &__image {
-            justify-self: center;
-            width: 498px;
-            height: 547px;
-        }
-
-        &__title {
-            text-align: center;
-        }
-
-        &__description {
-            text-align: center;
-        }
-
-        &__text {
-            gap: 30px 1em;
-        }
-
-        &__number {
-            width: unset;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-
-        &__capture {
-            text-align: center;
-        }
-
-        &__button {
-            justify-self: center;
-
-        }
+    &__image {
+      justify-self: center;
+      width: 498px;
+      height: 547px;
     }
+
+    &__title {
+      text-align: center;
+    }
+
+    &__description {
+      text-align: center;
+    }
+
+    &__text {
+      gap: 30px 1em;
+    }
+
+    &__number {
+      width: unset;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    &__capture {
+      text-align: center;
+    }
+
+    &__button {
+      justify-self: center;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .about {
+    width: 100%;
+    grid-template-columns: 100%;
+    padding: 30px 10px 0;
+    gap: 15px;
+
+    &__image {
+      width: 100%;
+      aspect-ratio: 1/1.09;
+      height: unset;
+    }
+
+    &__title {
+      font-size: 34px;
+    }
+
+    &__description {
+      font-size: 13px;
+    }
+  }
 }

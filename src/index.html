@@ -32,6 +32,31 @@
 </header>
 
 <body class="body">
+    <section class="about">
+        <div class="about__image"></div>
+        <div class="about__text">
+            <h2 class="about__title">AVAILABLE HOMES FOR&nbsp;SALE
+                BY&nbsp;EMAAR PROPERTIES</h2>
+            <p class="about__description">
+                Emaar Properties is one of the world’s most valuable and admired real estate development companies. With proven 
+                competencies in properties, shopping malls & retail and hospitality & leisure.Emaar Properties is one of the 
+                world’s most valuable and admired real estate development companies
+            </p>
+            <div class="about__market-cup">
+                <span class="about__number">$10.9 bln</span>
+                <p class="about__capture">Market cap</p>
+            </div>
+            <div class="about__revenue">
+                <span class="about__number">$7.7 bln</span>
+                <p class="about__capture">Revenue</p>
+            </div>
+            <div class="about__profit">
+                <span class="about__number">$1 bln</span>
+                <p class="about__capture">$1 bln</p>
+            </div>
+            <button class="button button_dark about__button">see more</button>
+        </div>
+    </section>
     <section class="top-projects">
         <h2 class="top-projects__title">top projects</h2>
         <div class="top-projects__cards">
@@ -275,7 +300,8 @@
         </div>
     </div>
 </footer>
-<div class="popup popup_type_window">
+
+<div class="popup popup_type_window popup__brouchure">
     <div class="popup__window">
         <div class="popup__contact-us">
             <div class="popup__logo popup__logo_type_transform">
@@ -295,10 +321,10 @@
             <input type="number" class="form__input" placeholder="Your phone">
             <button class="button button_light">Download brochure</button>
         </form>
-        <button class="button button_light popup__button_type_window">close</button>
+        <button class="button button_light popup__button-close popup__button_type_window ">close</button>
     </div>
 </div>
-<div class="popup popup_type_window  popup_opened popup_with-image">
+<div class="popup popup_type_window popup__unique-offer  popup_with-image">
     <div class="popup__window">
         <img src="<%=require('../src/assets/images/popup-back-img-1.png')%>" alt=""
             class="popup__background popup__background_position_top">
@@ -325,14 +351,14 @@
                 <a href="#" class="link form__link">Masterplan</a>
             </div>
         </form>
-        <button class="button button_light popup__button_type_window">close</button>
+        <button class="button button_light popup__button-close popup__button_type_window">close</button>
     </div>
 </div>
-<div class="popup ">
+<div class="popup popup__details">
     <div class="modal-page ">
         <div class="modal-page__header">
             <h2 class="title">creek rise</h2>
-            <button class="button button_light close">close</button>
+            <button class="button button_light popup__button-close close">close</button>
         </div>
         <section class="introduce">
             <img src="<%=require('../src/assets/images/greek-rice3.png')%>" alt="greek rice" class="introduce__image">
