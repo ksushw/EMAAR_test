@@ -1,92 +1,89 @@
 .menu {
-    padding: 30px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 0px 14px 3px rgba(0, 0, 0, 0.03);
+  width: 310px;
+  box-sizing: border-box;
+  position: sticky;
+  top: 26px;
+  margin-right: 8px;
+  align-self: flex-start;
+
+  &__community {
+    border: none;
+    margin: 0;
+    padding: 0;
+
+    .menu__division::before {
+      content: " ";
+      display: flex;
+      margin-right: 10px;
+      width: 12px;
+      height: 12px;
+      background-color: $white;
+      border: 1px solid $grey;
+      border-radius: 50%;
+      box-sizing: border-box;
+    }
+
+    .menu__ratio:checked + .menu__division::before {
+      padding: 2px;
+      background-color: $dark-blue;
+      background-clip: content-box;
+    }
+  }
+
+  &__projects {
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__title {
+    @include Lotto-medium;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+
+  &__division {
+    @include Lotto-medium;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: $grey;
     display: flex;
-    flex-direction: column;
-    gap: 30px;
-    border: 1px solid rgba(0, 0, 0, 0.05);
-    box-shadow: 0px 0px 14px 3px rgba(0, 0, 0, 0.03);
-    position: absolute;
-    top: 26px;
-    left: 70px;
-    width: 310px;
-    box-sizing: border-box;
+    align-items: center;
+  }
 
-    &__community {
-        border: none;
-        margin: 0;
-        padding: 0;
+  &__ratio {
+    display: none;
 
-        .menu__division::before {
-            content: " ";
-            display: flex;
-            margin-right: 10px;
-            width: 12px;
-            height: 12px;
-            background-color: $white;
-            border: 1px solid $grey;
-            border-radius: 50%;
-            box-sizing: border-box;
-        }
+    &:checked {
+      background-color: $dark-blue;
 
-        .menu__ratio:checked+.menu__division::before {
-            padding: 2px;
-            background-color: $dark-blue;
-            background-clip: content-box;
-
-        }
-
+      & + .menu__division {
+        color: $dark-blue;
+      }
     }
-
-    &__projects {
-        border: none;
-        margin: 0;
-        padding: 0;
-    }
-
-    &__title {
-        @include Lotto-medium;
-        font-size: 20px;
-        line-height: 24px;
-        text-transform: uppercase;
-        margin-bottom: 15px;
-    }
-
-    &__division {
-        @include Lotto-medium;
-        font-size: 16px;
-        line-height: 19px;
-        text-transform: uppercase;
-        color: $grey;
-        display: flex;
-        align-items: center;
-    }
-
-    &__ratio {
-        display: none;
-
-        &:checked {
-            background-color: $dark-blue;
-
-            &+.menu__division {
-                color: $dark-blue;
-
-            }
-        }
-    }
-
+  }
 }
 
 @media (max-width: 1439px) {
-    .menu {
-        top: 50px;
-        left: 50px;
-        padding: 20px;
-        width: 250px;
-    }
+  .menu {
+    top: 50px;
+    left: 50px;
+    padding: 20px;
+    width: 250px;
+  }
 }
 
 @media (max-width: 1023px) {
-    .menu {
-        display: none;
-    }
+  .menu {
+    display: none;
+  }
 }
