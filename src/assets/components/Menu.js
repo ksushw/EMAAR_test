@@ -21,7 +21,6 @@ class Menu {
     const scrollPosition = window.pageYOffset;
     const containerPosition =
       this.container.getBoundingClientRect().y + window.pageYOffset;
-    console.log(containerPosition, scrollPosition);
     this.elements.map((element) => {
       if (
         containerPosition + element.offsetTop - 200 <= scrollPosition &&

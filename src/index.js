@@ -2,9 +2,10 @@ import "../src/assets/scss/pages/index.scss";
 
 import { Popup } from "./assets/components/Popup";
 import { Menu } from "./assets/components/Menu";
+import { Slider } from "./assets/components/Slider";
 
 // Popus open/close logic
-const sliderButton = document.querySelector(".slider__button");
+const sliderButtons = document.querySelectorAll(".slider__button");
 const detailsPopup = document.querySelector(".popup__details");
 
 const aboutButton = document.querySelector(".about__button");
@@ -21,11 +22,22 @@ aboutButton.addEventListener("click", () => {
   brochure.open();
 });
 
-sliderButton.addEventListener("click", () => {
-  details.open();
+sliderButtons.forEach((sliderButton) => {
+  sliderButton.addEventListener("click", () => {
+    details.open();
+  });
 });
 
 // scroll logic
 
 const scroll = new Menu();
 scroll.setEventListeners();
+
+//slider
+
+const sliders = document.querySelectorAll(".slider");
+sliders.forEach((item) => {
+  const slider = new Slider(item);
+  slider.start();
+  slider.setEventListeners();
+});
