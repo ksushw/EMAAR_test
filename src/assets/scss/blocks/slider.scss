@@ -2,12 +2,35 @@
   width: 100%;
   position: relative;
   overflow: hidden;
+  box-shadow: 0px 0px 0px 3px white;
+  container-type: inline-size;
+  container-name: card;
 
-  &__container {
-    padding: 50px 14px 0;
+  &__ana {
+    width: 100%;
+    aspect-ratio: 11/5;
+    padding: 0px 65px;
+    box-sizing: border-box;
+    -webkit-box-shadow: inset 67px 0px 30px -28px white,
+      inset -67px 0px 30px -28px white;
+    -moz-box-shadow: inset 67px 0px 30px -28px white,
+      inset -67px 0px 30px -28px white;
+    box-shadow: inset 67px 0px 30px -28px white,
+      inset -67px 0px 30px -28px white;
+    border: 1px solid white;
+  }
+
+  &__slide {
+    width: calc(100% - (65px));
+    aspect-ratio: 1.85/1;
+    overflow: hidden;
+    padding-right: 65px;
+    box-sizing: border-box;
+    position: absolute;
+    transition: all 1s;
     display: flex;
-    flex-wrap: wrap;
-    gap: 18px 20px;
+    align-items: start;
+    z-index: -1;
   }
 
   &__title {
@@ -38,36 +61,33 @@
     background-size: contain;
     background-color: transparent;
     height: 10px;
-
     position: absolute;
     top: 50%;
     line-height: 50px;
     cursor: pointer;
   }
 
+  &__arrow_direction_left {
+    left: 7px;
+  }
+  &__arrow_direction_right {
+    right: 7px;
+  }
+
   &__arrow_direction_right {
     transform: rotate(180deg);
   }
 
-  &__card {
-    display: flex;
-    align-items: center;
-    border: 1px solid rgba(0, 0, 0, 0.05);
-    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.07);
-  }
-
   &__image {
-    width: 58.66%;
     aspect-ratio: 1.1/1;
-    object-fit: contain;
   }
 
   &__info {
+    width: 41.33%;
     padding: 30px;
     display: flex;
     flex-direction: column;
     gap: 15px;
-    height: 100%;
     box-sizing: border-box;
     border: 1px solid rgba(0, 0, 0, 0.05);
     box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.07);
@@ -126,15 +146,13 @@
 
 @media (max-width: 767px) {
   .slider {
-    min-height: 800px;
-
     &__container {
       padding: 30px 0px 0;
       gap: 0px 0px;
       margin-top: 20px;
     }
-    &__card {
-      display: flex;
+
+    &__slide {
       flex-direction: column;
       align-items: center;
     }
@@ -145,32 +163,8 @@
   }
 }
 
-.slide-ana {
-  width: 100%;
-  aspect-ratio: 2.22/1;
-  padding: 18px 65px;
-  box-sizing: border-box;
-}
-.slide {
-  width: calc(100% - (65px));
-  padding-right: 65px;
-  box-sizing: border-box;
-  position: absolute;
-  transition: all 1s;
-  display: flex;
-}
-
-#prev {
-  left: 7px;
-}
-#next {
-  right: 7px;
-}
-#prev svg,
-#next svg {
-  width: 0%;
-}
-#prev:hover,
-#next:hover {
-  opacity: 0.5;
-}
+// @container (max-width: 700px) {
+//   .slider__slide {
+//     width: 200%;
+//   }
+// }
