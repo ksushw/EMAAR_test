@@ -1,69 +1,67 @@
 .card-project {
-    margin: 0;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+
+  &__image {
     width: 100%;
-    display: flex;
-    position: relative;
-    overflow: hidden;
+    object-fit: cover;
+    transition: 0.3s;
+  }
+
+  &__caption {
+    z-index: 2;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(7.5px);
+    width: 100%;
+    object-fit: contain;
+    padding: 28px 47px;
     box-sizing: border-box;
+    display: grid;
+    gap: 7px;
+    transition: 0.3s;
+  }
 
-    &__image {
-        width: 100%;
-        object-fit: cover;
-        transition: 0.3s;
-    }
+  &__title {
+    @include Alethia;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: $font-25;
+    line-height: 25px;
+  }
 
-    &__caption {
-        z-index: 2;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        background: rgba(255, 255, 255, 0.85);
-        backdrop-filter: blur(7.5px);
-        width: 100%;
-        object-fit: contain;
-        padding: 28px 47px;
-        box-sizing: border-box;
-        display: grid;
-        gap: 7px;
-        transition: 0.3s;
-    }
+  &__price {
+    @include Lotto-regular;
+    margin: 0;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+  }
 
-
-    &__title {
-        @include Alethia;
-        margin: 0;
-        text-transform: uppercase;
-        font-size: 25px;
-        line-height: 25px;
-    }
-
-    &__price {
-        @include Lotto-regular;
-        margin: 0;
-        font-size: 16px;
-        line-height: 19px;
-        text-transform: uppercase;
-    }
-
-    &__description {
-        @include Lotto-light;
-        margin: 0;
-        margin-top: 15px;
-        font-size: 15.18px;
-        line-height: 23px;
-
-    }
+  &__description {
+    @include Lotto-light;
+    margin: 0;
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 23px;
+  }
 }
 
 @media (max-width: 1439px) {
-    .card-project {
-        &__caption {
-            gap: 0;
-            padding: 15px 20px 25px;
-        }
-
-        &__description {
-            margin-top: 10px;
-        }
+  .card-project {
+    &__caption {
+      gap: 0;
+      padding: 15px 20px 25px;
     }
+
+    &__description {
+      margin-top: 10px;
+    }
+  }
 }

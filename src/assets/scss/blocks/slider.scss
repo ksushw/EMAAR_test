@@ -34,7 +34,7 @@
 
   &__title {
     @include Alethia;
-    font-size: 30px;
+    font-size: $font-30;
     line-height: 40px;
     text-transform: uppercase;
     grid-area: title;
@@ -43,7 +43,7 @@
 
   &__number {
     @include Lotto-light;
-    font-size: 30px;
+    font-size: $font-30;
     line-height: 40px;
     text-transform: uppercase;
     justify-self: end;
@@ -98,7 +98,7 @@
   &__header {
     @include Alethia;
     margin: 0;
-    font-size: 30px;
+    font-size: $font-30;
     line-height: 40px;
     text-transform: uppercase;
   }

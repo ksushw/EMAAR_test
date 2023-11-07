@@ -46,7 +46,7 @@
 
   &__name {
     @include Lotto-light;
-    font-size: 20px;
+    font-size: $font-20;
     text-transform: uppercase;
     margin: 0;
     line-height: normal;
@@ -55,7 +55,7 @@
 
   &__distance {
     @include Lotto-medium;
-    font-size: 30px;
+    font-size: $font-30;
     line-height: normal;
     text-align: center;
   }
@@ -101,7 +101,7 @@
     }
 
     &__distance {
-      font-size: 20px;
+      font-size: $font-20;
     }
   }
 }

@@ -1,7 +1,17 @@
 // Colours
-$dark-blue: #071C35;
+$dark-blue: #071c35;
 $grey: #777777;
-$light-grey: #D9D9D9;
-$white: #FFFFFF;
+$light-grey: #d9d9d9;
+$white: #ffffff;
 
-$salad-green: #85DF99;
+$salad-green: #85df99;
+
+//font sizes
+$font-100: calc((100vw - 320px) / (1440 - 320) * (100 - 84) + 84px);
+$font-54: calc((100vw - 320px) / (1440 - 320) * (54 - 45) + 45px);
+$font-50: calc((100vw - 320px) / (1440 - 320) * (50 - 40) + 40px);
+$font-44: calc((100vw - 320px) / (1440 - 320) * (44 - 37) + 37px);
+$font-30: calc((100vw - 320px) / (1440 - 320) * (30 - 25) + 25px);
+$font-28: calc((100vw - 320px) / (1440 - 320) * (28 - 23) + 23px);
+$font-25: calc((100vw - 320px) / (1440 - 320) * (25 - 21) + 21px);
+$font-20: calc((100vw - 320px) / (1440 - 320) * (20 - 17) + 17px);
