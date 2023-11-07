@@ -105,7 +105,7 @@
 
   &__rooms {
     @include Lotto-regular;
-    font-size: 16px;
+    font-size: $font-16;
     line-height: 19px;
     padding-left: 30px;
     background-image: url(../../images/bedroom.svg);
@@ -116,14 +116,14 @@
   &__description {
     @include Lotto-light;
     margin: 0;
-    font-size: 16px;
+    font-size: $font-16;
     line-height: 24px;
     color: $grey;
   }
 
   &__price {
     @include Lotto-regular;
-    font-size: 16px;
+    font-size: $font-16;
     line-height: 40px;
     text-transform: uppercase;
   }

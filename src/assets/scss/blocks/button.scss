@@ -1,42 +1,42 @@
 .button {
-    cursor: pointer;
-    @include Lotto-regular;
-    font-size: 16px;
-    line-height: 18px;
-    text-transform: uppercase;
-    height: 40px;
-    padding: 0 20px;
-    box-sizing: border-box;
-    border: 1px solid rgba(7, 28, 53, 0.15);
-    transition: 0.3s ease-in-out;
+  cursor: pointer;
+  @include Lotto-regular;
+  font-size: $font-16;
+  line-height: 18px;
+  text-transform: uppercase;
+  height: 40px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  border: 1px solid rgba(7, 28, 53, 0.15);
+  transition: 0.3s ease-in-out;
+  background-color: $white;
+
+  &:hover {
+    background-color: rgba(7, 28, 53, 0.7);
+    color: $white;
+  }
+
+  &:active {
+    border: 1px solid rgba(7, 28, 53, 0.7);
     background-color: $white;
+    color: $dark-blue;
+  }
+
+  &_dark {
+    background-color: $dark-blue;
+    color: $white;
+
+    border: unset;
 
     &:hover {
-        background-color: rgba(7, 28, 53, 0.7);
-        color: $white;
+      opacity: 0.7;
     }
 
     &:active {
-        border: 1px solid rgba(7, 28, 53, 0.7);
-        background-color: $white;
-        color: $dark-blue;
+      height: 40px;
+      border: 1px solid $dark-blue;
+      background-color: $white;
+      color: $dark-blue;
     }
-
-    &_dark {
-        background-color: $dark-blue;
-        color: $white;
-        
-        border: unset;
-
-        &:hover {
-            opacity: 0.7;
-        }
-
-        &:active {
-            height: 40px;
-            border: 1px solid $dark-blue;
-            background-color: $white;
-            color: $dark-blue;
-        }
-    }
+  }
 }

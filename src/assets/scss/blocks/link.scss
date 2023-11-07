@@ -1,16 +1,16 @@
 .link {
-    cursor: pointer;
-    @include Lotto-regular;
-    font-size: 14px;
-    line-height: 24px;
-    text-transform: uppercase;
-    text-decoration: none;
+  cursor: pointer;
+  @include Lotto-regular;
+  font-size: $font-14;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
 
-    &:hover {
-        text-decoration: underline;
-    }
+  &:hover {
+    text-decoration: underline;
+  }
 
-    &:active {
-        opacity: 0.7;
-    }
+  &:active {
+    opacity: 0.7;
+  }
 }

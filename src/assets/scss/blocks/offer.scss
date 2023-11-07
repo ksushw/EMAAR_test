@@ -14,7 +14,7 @@
   &__subtitle {
     @include Lotto-light;
     text-align: center;
-    font-size: 16px;
+    font-size: $font-16;
     line-height: 150%;
     text-transform: uppercase;
     margin: 0 auto;

@@ -96,7 +96,7 @@
 
   &__name {
     @include Lotto-medium;
-    font-size: 16px;
+    font-size: $font-16;
     line-height: 19px;
     text-align: center;
     text-transform: uppercase;

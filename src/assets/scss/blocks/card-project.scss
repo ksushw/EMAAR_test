@@ -39,7 +39,7 @@
   &__price {
     @include Lotto-regular;
     margin: 0;
-    font-size: 16px;
+    font-size: $font-16;
     line-height: 19px;
     text-transform: uppercase;
   }
@@ -48,7 +48,7 @@
     @include Lotto-light;
     margin: 0;
     margin-top: 15px;
-    font-size: 16px;
+    font-size: $font-16;
     line-height: 23px;
   }
 }
