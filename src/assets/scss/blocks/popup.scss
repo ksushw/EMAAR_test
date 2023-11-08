@@ -3,13 +3,18 @@
   position: fixed;
   top: 0;
   left: 0;
-  display: none;
+  // display: none;
+  display: flex;
   z-index: 2;
   justify-content: center;
   align-items: center;
+  visibility: hidden;
+  transition: 0.3s;
+  opacity: 0;
 
   &_opened {
-    display: flex;
+    visibility: visible;
+    opacity: 1;
   }
 
   &_type_window {

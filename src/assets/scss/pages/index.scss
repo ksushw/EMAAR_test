@@ -4,12 +4,11 @@
 @import "../vendor/fonts.scss";
 @import "../vendor/mixins.scss";
 
+@import "../blocks/body.scss";
+
 @import "../blocks/button.scss";
 @import "../blocks/link.scss";
 @import "../blocks/socials.scss";
-
-
-
 
 @import "../blocks/header.scss";
 @import "../blocks/about.scss";
@@ -23,7 +22,6 @@
 @import "../blocks/footer.scss";
 @import "../blocks/popup.scss";
 @import "../blocks/form.scss";
-
 
 @import "../blocks/modal-page.scss";
 @import "../blocks/introduce.scss";

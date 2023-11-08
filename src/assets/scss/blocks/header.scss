@@ -17,7 +17,6 @@
     backdrop-filter: blur(7.5px);
     padding: 30px 30px 50px;
     color: $white;
-
     display: grid;
     gap: 29px 31px;
     grid-auto-rows: min-content;
@@ -96,7 +95,7 @@
     width: min-content;
     font-size: $font-16;
     line-height: 19px;
-    color: $white;
+    color: $grey-text;
   }
 }
 
@@ -110,20 +109,33 @@
 
 @media (max-width: 767px) {
   .header {
-    padding: 20px;
+    padding: 50px;
 
     &__info {
       width: fit-content;
 
-      padding: 20px 20px 25px;
+      padding: 40px 40px 45px;
       height: fit-content;
 
-      gap: 10px;
+      gap: 30px;
     }
 
     &__number {
       display: flex;
       width: min-content;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .header {
+    justify-content: center;
+    padding: 20px;
+    &__info {
+      width: 100%;
+
+      padding: 20px 20px 25px;
+      align-self: center;
     }
   }
 }

@@ -5,19 +5,23 @@
   box-shadow: 0px 0px 0px 3px white;
   container-type: inline-size;
   container-name: card;
-
+  margin: 50px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   &__ana {
     width: 100%;
     aspect-ratio: 11/5;
     padding: 0px 65px;
     box-sizing: border-box;
-    -webkit-box-shadow: inset 67px 0px 30px -28px white,
-      inset -67px 0px 30px -28px white;
-    -moz-box-shadow: inset 67px 0px 30px -28px white,
-      inset -67px 0px 30px -28px white;
-    box-shadow: inset 67px 0px 30px -28px white,
-      inset -67px 0px 30px -28px white;
-    border: 1px solid white;
+    // -webkit-box-shadow: inset 67px 0px 30px -28px white,
+    //   inset -67px 0px 30px -28px white;
+    // -moz-box-shadow: inset 67px 0px 30px -28px white,
+    //   inset -67px 0px 30px -28px white;
+    // box-shadow: inset 67px 0px 30px -28px white,
+    //   inset -67px 0px 30px -28px white;
+    // border: 1px solid white;
+    margin-top: 18px;
   }
 
   &__slide {
@@ -29,7 +33,7 @@
     position: absolute;
     transition: all 1s;
 
-    z-index: -1;
+    z-index: 0;
   }
 
   &__title {
@@ -39,6 +43,7 @@
     text-transform: uppercase;
     grid-area: title;
     margin: 0;
+    margin-left: 65px;
   }
 
   &__number {
@@ -47,6 +52,12 @@
     line-height: 40px;
     text-transform: uppercase;
     justify-self: end;
+    color: $grey;
+    margin-right: 65px;
+
+    &_active {
+      color: $dark-blue;
+    }
   }
 
   &__arrow {
@@ -80,7 +91,6 @@
   &__image {
     aspect-ratio: 1.1/1;
     width: 100%;
-    // width: 58.66%;
   }
 
   &__info {
@@ -92,7 +102,6 @@
     border: 1px solid rgba(0, 0, 0, 0.05);
     box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.07);
     width: 100%;
-    // width: 41.33%;
   }
 
   &__header {

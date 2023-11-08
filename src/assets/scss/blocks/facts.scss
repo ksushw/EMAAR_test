@@ -47,11 +47,21 @@
 
   &__title {
     margin: 0;
-    margin-bottom: 41px;
+    margin-bottom: 30px;
     @include Alethia;
     font-size: $font-50;
     line-height: 120%;
     text-transform: uppercase;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 236px;
+      height: 1px;
+      opacity: 0.1;
+      background: $grey;
+      margin-top: 10px;
+    }
   }
 
   &__description {

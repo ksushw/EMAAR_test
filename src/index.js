@@ -17,6 +17,7 @@ const uniqueOffer = new Popup(popupUniqueOffer);
 const brochure = new Popup(brochurePopup);
 const details = new Popup(detailsPopup);
 
+console.log(sliderButtons);
 setTimeout(() => uniqueOffer.open(), 30000);
 aboutButton.addEventListener("click", () => {
   brochure.open();
@@ -24,6 +25,7 @@ aboutButton.addEventListener("click", () => {
 
 sliderButtons.forEach((sliderButton) => {
   sliderButton.addEventListener("click", () => {
+    console.log(12);
     details.open();
   });
 });
